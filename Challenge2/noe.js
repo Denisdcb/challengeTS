@@ -52,20 +52,10 @@ function photographier(animal) {
     console.log(`Vous avez photographier l'animal : ${animal.name}`);
 }
 function miauler(animal) {
-    if (animal instanceof Chat) {
-        console.log(`${animal.name} dit MIAOUUUU`);
-    }
-    else {
-        console.log(`${animal.name} ne peut pas miauler`);
-    }
+    console.log(`${animal.name} dit MIAOUUUU`);
 }
 function aboyer(animal) {
-    if (animal instanceof Chien) {
-        console.log(`${animal.name} dit waoufffff`);
-    }
-    else {
-        console.log(`${animal.name} ne peut pas aboyer`);
-    }
+    console.log(`${animal.name} dit WAOUFFF`);
 }
 function voler(animal) {
     console.log(`${animal.name} s'est envolé`);
@@ -87,18 +77,9 @@ function nourir(animal) {
 const chat1 = new Chat("mimi", "black", "européen");
 const chat2 = new Chat("momo", "white", "européen");
 const chien1 = new Chien("summer", "black", "terre-neuve");
-const chien2 = new Chien("phantom", "white", "moon-moon");
+const chien2 = new Chat("phantom", "white", "moon-moon");
 const oiseau1 = new Oiseau("cuit-cuit", "red", "mésange");
 const oiseau2 = new Oiseau("piou-piou", "black", "merle");
 const poisson1 = new Poisson("mayo-thon", "black", "thon");
 const poisson2 = new Poisson("baby-shark", "black", "requin");
 const insecte1 = new Insecte("rico", 1000, "black", "requin");
-photographier(chat1);
-miauler(chat1);
-nourir(chat1);
-nourir(chat2);
-caresser(chat2);
-aboyer(chat1);
-aboyer(chien2);
-nager(chien1);
-aboyer(chat2);
