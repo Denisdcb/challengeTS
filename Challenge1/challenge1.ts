@@ -13,3 +13,5 @@ function concat(a: string, b: string): string {
 
 const ds: string = concat("Donkey", concat("School", ""));
 console.log(ds);
+
+const x: number = 5;
